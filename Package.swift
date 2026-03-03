@@ -3,20 +3,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "EUPayExample",
+    name: "EuroPayExample",
     platforms: [
         .iOS(.v16),
     ],
     dependencies: [
-        .package(url: "https://github.com/mhxdev/EUPayKit", from: "1.0.0"),
+        .package(url: "https://github.com/mhxdev/EuroPayKit", from: "1.0.0"),
     ],
     targets: [
         .executableTarget(
-            name: "EUPayExample",
+            name: "EuroPayExample",
             dependencies: [
-                .product(name: "EUPayKit", package: "EUPayKit"),
+                .product(name: "EuroPayKit", package: "EuroPayKit"),
             ],
-            path: "EUPayExample"
+            path: "EuroPayExample"
         ),
     ]
 )

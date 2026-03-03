@@ -1,5 +1,5 @@
 import Foundation
-import EUPayKit
+import EuroPayKit
 
 /// Observable app-wide state that drives the UI.
 @MainActor
@@ -7,8 +7,8 @@ final class AppState: ObservableObject {
 
     // MARK: - Published state
 
-    @Published var products: [EUPayProduct] = []
-    @Published var entitlements: [EUPayEntitlement] = []
+    @Published var products: [EuroPayProduct] = []
+    @Published var entitlements: [EuroPayEntitlement] = []
     @Published var isPro: Bool = false
     @Published var isLoading: Bool = false
 
@@ -20,7 +20,7 @@ final class AppState: ObservableObject {
     // MARK: - Init
 
     init() {
-        let key = "eupay_example_user_id"
+        let key = "europay_example_user_id"
         if let stored = UserDefaults.standard.string(forKey: key) {
             self.userId = stored
         } else {

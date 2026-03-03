@@ -1,5 +1,5 @@
 import SwiftUI
-import EUPayKit
+import EuroPayKit
 
 struct ContentView: View {
 
@@ -35,7 +35,7 @@ struct ContentView: View {
                     PaywallView()
                 }
             }
-            .navigationTitle("EUPay Example")
+            .navigationTitle("EuroPay Example")
         }
     }
 
@@ -54,8 +54,8 @@ struct ContentView: View {
                     }
 
                     LabeledContent("Environment") {
-                        Text(EUPayKit.shared != nil ? "Configured" : "Not configured")
-                            .foregroundStyle(EUPayKit.shared != nil ? .green : .red)
+                        Text(EuroPayKit.shared != nil ? "Configured" : "Not configured")
+                            .foregroundStyle(EuroPayKit.shared != nil ? .green : .red)
                     }
                 }
 
@@ -70,10 +70,10 @@ struct ContentView: View {
 
                 Section("About") {
                     LabeledContent("App Version", value: "1.0.0")
-                    Link("EUPay Documentation",
+                    Link("EuroPay Documentation",
                          destination: URL(string: "https://europay.dev/docs")!)
-                    Link("EUPayKit SDK",
-                         destination: URL(string: "https://github.com/mhxdev/EUPayKit")!)
+                    Link("EuroPayKit SDK",
+                         destination: URL(string: "https://github.com/mhxdev/EuroPayKit")!)
                 }
             }
             .navigationTitle("Settings")
@@ -106,7 +106,7 @@ struct ContentView: View {
     // MARK: - Data loading
 
     private func loadInitialData() async {
-        let service = EUPayService()
+        let service = EuroPayService()
         appState.isLoading = true
         defer { appState.isLoading = false }
 
@@ -116,7 +116,7 @@ struct ContentView: View {
         _ = await (productsTask, entitlementsTask)
     }
 
-    private func fetchProducts(_ service: EUPayService) async {
+    private func fetchProducts(_ service: EuroPayService) async {
         do {
             appState.products = try await service.fetchProducts()
         } catch {
@@ -125,7 +125,7 @@ struct ContentView: View {
     }
 
     private func restoreEntitlements() async {
-        let service = EUPayService()
+        let service = EuroPayService()
         appState.entitlements = await service.checkEntitlements(userId: appState.userId)
         appState.refreshProStatus()
     }

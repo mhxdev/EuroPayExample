@@ -1,9 +1,9 @@
 import SwiftUI
-import EUPayKit
+import EuroPayKit
 
 struct ProductListView: View {
 
-    let products: [EUPayProduct]
+    let products: [EuroPayProduct]
     let isLoading: Bool
 
     var body: some View {
@@ -30,7 +30,7 @@ struct ProductListView: View {
     // MARK: - Product row
 
     @ViewBuilder
-    private func productRow(_ product: EUPayProduct) -> some View {
+    private func productRow(_ product: EuroPayProduct) -> some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text(product.name)
@@ -58,7 +58,7 @@ struct ProductListView: View {
     }
 
     @ViewBuilder
-    private func typeBadge(_ product: EUPayProduct) -> some View {
+    private func typeBadge(_ product: EuroPayProduct) -> some View {
         let label: String
         switch product.productType {
         case .subscription:

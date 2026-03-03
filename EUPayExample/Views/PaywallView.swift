@@ -1,5 +1,5 @@
 import SwiftUI
-import EUPayKit
+import EuroPayKit
 
 struct PaywallView: View {
 
@@ -66,7 +66,7 @@ struct PaywallView: View {
             Text("Unlock Premium")
                 .font(.title.bold())
 
-            Text("Get unlimited access to all features with a subscription powered by EUPay.")
+            Text("Get unlimited access to all features with a subscription powered by EuroPay.")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -85,7 +85,7 @@ struct PaywallView: View {
 
     // MARK: - Actions
 
-    private func handlePurchase(_ product: EUPayProduct) async {
+    private func handlePurchase(_ product: EuroPayProduct) async {
         do {
             guard let windowScene = UIApplication.shared.connectedScenes
                 .compactMap({ $0 as? UIWindowScene }).first,
@@ -93,7 +93,7 @@ struct PaywallView: View {
                 return
             }
 
-            let service = EUPayService()
+            let service = EuroPayService()
             let transaction = try await service.purchase(
                 product: product,
                 userId: appState.userId,
@@ -106,12 +106,12 @@ struct PaywallView: View {
                 )
                 appState.refreshProStatus()
             }
-        } catch let error as EUPayError {
+        } catch let error as EuroPayError {
             switch error {
             case .userCancelled:
                 break // User dismissed — no alert needed
             case .regionNotSupported:
-                errorMessage = "EUPay is only available in the EU App Store. Use Apple In-App Purchase for other regions."
+                errorMessage = "EuroPay is only available in the EU App Store. Use Apple In-App Purchase for other regions."
                 showError = true
             default:
                 errorMessage = error.localizedDescription
@@ -124,7 +124,7 @@ struct PaywallView: View {
     }
 
     private func restore() async {
-        let service = EUPayService()
+        let service = EuroPayService()
         appState.entitlements = await service.checkEntitlements(userId: appState.userId)
         appState.refreshProStatus()
     }

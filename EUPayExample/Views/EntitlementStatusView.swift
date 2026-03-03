@@ -1,5 +1,5 @@
 import SwiftUI
-import EUPayKit
+import EuroPayKit
 
 struct EntitlementStatusView: View {
 
@@ -16,7 +16,7 @@ struct EntitlementStatusView: View {
     // MARK: - Active entitlement
 
     @ViewBuilder
-    private func activeCard(_ entitlement: EUPayEntitlement) -> some View {
+    private func activeCard(_ entitlement: EuroPayEntitlement) -> some View {
         HStack(spacing: 12) {
             Image(systemName: "checkmark.seal.fill")
                 .font(.title2)

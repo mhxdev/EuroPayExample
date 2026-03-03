@@ -1,9 +1,9 @@
 import SwiftUI
-import EUPayKit
+import EuroPayKit
 
 struct PurchaseButton: View {
 
-    let product: EUPayProduct
+    let product: EuroPayProduct
     let onPurchase: () async -> Void
 
     @State private var isPurchasing = false
