@@ -59,17 +59,18 @@ struct ProductListView: View {
 
     @ViewBuilder
     private func typeBadge(_ product: EuroPayProduct) -> some View {
-        let label: String
-        switch product.productType {
-        case .subscription:
-            if let interval = product.interval {
-                label = interval == "month" ? "Monthly" : "Yearly"
-            } else {
-                label = "Subscription"
+        let label: String = {
+            switch product.productType {
+            case .subscription:
+                if let interval = product.interval {
+                    return interval == "month" ? "Monthly" : "Yearly"
+                } else {
+                    return "Subscription"
+                }
+            case .oneTime:
+                return "One-time"
             }
-        case .oneTime:
-            label = "One-time"
-        }
+        }()
 
         Text(label)
             .font(.caption2.bold())

@@ -13,7 +13,7 @@ A complete reference implementation showing how to integrate [EuroPayKit](https:
 ## Prerequisites
 
 - Xcode 15+ with iOS 16 SDK
-- An EuroPay account at [europay.dev](https://europay.dev)
+- A EuroPay account at [europay.dev](https://europay.dev)
 - At least one product created in the EuroPay dashboard
 - A connected Stripe account (BYOS)
 
@@ -33,9 +33,9 @@ A complete reference implementation showing how to integrate [EuroPayKit](https:
 
 3. Add your credentials in `EuroPayExample/Info.plist`:
    ```xml
-   <key>EUPAY_API_KEY</key>
+   <key>EUROPAY_API_KEY</key>
    <string>europay_live_your_key_here</string>
-   <key>EUPAY_APP_ID</key>
+   <key>EUROPAY_APP_ID</key>
    <string>your_app_id_here</string>
    ```
    You can find both values in the [EuroPay Dashboard](https://europay.dev/dashboard/apps).
@@ -64,7 +64,7 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .europayCheckoutReturnHandler()
+                .euroPayCheckoutReturnHandler()
         }
     }
 }

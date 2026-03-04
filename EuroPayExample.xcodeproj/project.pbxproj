@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10000010000000000000001 /* EUPayExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000001 /* EUPayExampleApp.swift */; };
+		A10000010000000000000001 /* EuroPayExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000001 /* EuroPayExampleApp.swift */; };
 		A10000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000002 /* ContentView.swift */; };
 		A10000010000000000000003 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000003 /* PaywallView.swift */; };
 		A10000010000000000000004 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000004 /* ProductListView.swift */; };
 		A10000010000000000000005 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000005 /* PurchaseButton.swift */; };
 		A10000010000000000000006 /* EntitlementStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000006 /* EntitlementStatusView.swift */; };
 		A10000010000000000000007 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000007 /* AppState.swift */; };
-		A10000010000000000000008 /* EUPayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000008 /* EUPayService.swift */; };
-		A10000010000000000000009 /* EUPayKit in Frameworks */ = {isa = PBXBuildFile; productRef = A10000060000000000000001 /* EUPayKit */; };
+		A10000010000000000000008 /* EuroPayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000008 /* EuroPayService.swift */; };
+		A10000010000000000000009 /* EuroPayKit in Frameworks */ = {isa = PBXBuildFile; productRef = A10000060000000000000001 /* EuroPayKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A10000020000000000000001 /* EUPayExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUPayExampleApp.swift; sourceTree = "<group>"; };
+		A10000020000000000000001 /* EuroPayExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroPayExampleApp.swift; sourceTree = "<group>"; };
 		A10000020000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A10000020000000000000003 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		A10000020000000000000004 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		A10000020000000000000005 /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
 		A10000020000000000000006 /* EntitlementStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementStatusView.swift; sourceTree = "<group>"; };
 		A10000020000000000000007 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		A10000020000000000000008 /* EUPayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUPayService.swift; sourceTree = "<group>"; };
+		A10000020000000000000008 /* EuroPayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroPayService.swift; sourceTree = "<group>"; };
 		A10000020000000000000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A10000020000000000000010 /* EUPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EUPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000020000000000000010 /* EuroPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10000010000000000000009 /* EUPayKit in Frameworks */,
+				A10000010000000000000009 /* EuroPayKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,12 +46,12 @@
 		A10000040000000000000001 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				A10000040000000000000002 /* EUPayExample */,
+				A10000040000000000000002 /* EuroPayExample */,
 				A10000040000000000000006 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A10000040000000000000002 /* EUPayExample */ = {
+		A10000040000000000000002 /* EuroPayExample */ = {
 			isa = PBXGroup;
 			children = (
 				A10000040000000000000003 /* App */,
@@ -60,13 +60,13 @@
 				A10000040000000000000007 /* Services */,
 				A10000020000000000000009 /* Info.plist */,
 			);
-			path = EUPayExample;
+			path = EuroPayExample;
 			sourceTree = "<group>";
 		};
 		A10000040000000000000003 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A10000020000000000000001 /* EUPayExampleApp.swift */,
+				A10000020000000000000001 /* EuroPayExampleApp.swift */,
 				A10000020000000000000002 /* ContentView.swift */,
 			);
 			path = App;
@@ -94,7 +94,7 @@
 		A10000040000000000000006 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A10000020000000000000010 /* EUPayExample.app */,
+				A10000020000000000000010 /* EuroPayExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 		A10000040000000000000007 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A10000020000000000000008 /* EUPayService.swift */,
+				A10000020000000000000008 /* EuroPayService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A10000050000000000000001 /* EUPayExample */ = {
+		A10000050000000000000001 /* EuroPayExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A10000080000000000000003 /* Build configuration list for PBXNativeTarget "EUPayExample" */;
+			buildConfigurationList = A10000080000000000000003 /* Build configuration list for PBXNativeTarget "EuroPayExample" */;
 			buildPhases = (
 				A10000030000000000000002 /* Sources */,
 				A10000030000000000000001 /* Frameworks */,
@@ -122,12 +122,12 @@
 			);
 			dependencies = (
 			);
-			name = EUPayExample;
+			name = EuroPayExample;
 			packageProductDependencies = (
-				A10000060000000000000001 /* EUPayKit */,
+				A10000060000000000000001 /* EuroPayKit */,
 			);
-			productName = EUPayExample;
-			productReference = A10000020000000000000010 /* EUPayExample.app */;
+			productName = EuroPayExample;
+			productReference = A10000020000000000000010 /* EuroPayExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A10000080000000000000001 /* Build configuration list for PBXProject "EUPayExample" */;
+			buildConfigurationList = A10000080000000000000001 /* Build configuration list for PBXProject "EuroPayExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,13 +155,13 @@
 			);
 			mainGroup = A10000040000000000000001 /* Root */;
 			packageReferences = (
-				A10000090000000000000001 /* XCRemoteSwiftPackageReference "EUPayKit" */,
+				A10000090000000000000001 /* XCRemoteSwiftPackageReference "EuroPayKit" */,
 			);
 			productRefGroup = A10000040000000000000006 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A10000050000000000000001 /* EUPayExample */,
+				A10000050000000000000001 /* EuroPayExample */,
 			);
 		};
 /* End PBXProject section */
@@ -181,14 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10000010000000000000001 /* EUPayExampleApp.swift in Sources */,
+				A10000010000000000000001 /* EuroPayExampleApp.swift in Sources */,
 				A10000010000000000000002 /* ContentView.swift in Sources */,
 				A10000010000000000000003 /* PaywallView.swift in Sources */,
 				A10000010000000000000004 /* ProductListView.swift in Sources */,
 				A10000010000000000000005 /* PurchaseButton.swift in Sources */,
 				A10000010000000000000006 /* EntitlementStatusView.swift in Sources */,
 				A10000010000000000000007 /* AppState.swift in Sources */,
-				A10000010000000000000008 /* EUPayService.swift in Sources */,
+				A10000010000000000000008 /* EuroPayService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = EUPayExample/Info.plist;
+				INFOPLIST_FILE = EuroPayExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -330,7 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = EUPayExample/Info.plist;
+				INFOPLIST_FILE = EuroPayExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A10000080000000000000001 /* Build configuration list for PBXProject "EUPayExample" */ = {
+		A10000080000000000000001 /* Build configuration list for PBXProject "EuroPayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10000080000000000000004 /* Debug */,
@@ -360,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A10000080000000000000003 /* Build configuration list for PBXNativeTarget "EUPayExample" */ = {
+		A10000080000000000000003 /* Build configuration list for PBXNativeTarget "EuroPayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10000080000000000000006 /* Debug */,
@@ -372,9 +372,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A10000090000000000000001 /* XCRemoteSwiftPackageReference "EUPayKit" */ = {
+		A10000090000000000000001 /* XCRemoteSwiftPackageReference "EuroPayKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mhxdev/EUPayKit";
+			repositoryURL = "https://github.com/mhxdev/EuroPayKit";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -383,10 +383,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A10000060000000000000001 /* EUPayKit */ = {
+		A10000060000000000000001 /* EuroPayKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A10000090000000000000001 /* XCRemoteSwiftPackageReference "EUPayKit" */;
-			productName = EUPayKit;
+			package = A10000090000000000000001 /* XCRemoteSwiftPackageReference "EuroPayKit" */;
+			productName = EuroPayKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

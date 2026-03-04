@@ -9,12 +9,12 @@ struct EuroPayExampleApp: App {
     init() {
         // Read credentials from Info.plist — replace the placeholder values
         // in Info.plist with your real EuroPay API key and App ID.
-        let apiKey = Bundle.main.object(forInfoDictionaryKey: "EUPAY_API_KEY") as? String ?? ""
-        let appId  = Bundle.main.object(forInfoDictionaryKey: "EUPAY_APP_ID") as? String ?? ""
+        let apiKey = Bundle.main.object(forInfoDictionaryKey: "EUROPAY_API_KEY") as? String ?? ""
+        let appId  = Bundle.main.object(forInfoDictionaryKey: "EUROPAY_APP_ID") as? String ?? ""
 
-        guard !apiKey.isEmpty, apiKey != "YOUR_EUPAY_API_KEY_HERE",
-              !appId.isEmpty,  appId  != "YOUR_EUPAY_APP_ID_HERE" else {
-            print("⚠️  EuroPay: Set EUPAY_API_KEY and EUPAY_APP_ID in Info.plist")
+        guard !apiKey.isEmpty, apiKey != "YOUR_EUROPAY_API_KEY_HERE",
+              !appId.isEmpty,  appId  != "YOUR_EUROPAY_APP_ID_HERE" else {
+            print("⚠️  EuroPay: Set EUROPAY_API_KEY and EUROPAY_APP_ID in Info.plist")
             return
         }
 
@@ -30,7 +30,7 @@ struct EuroPayExampleApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(appState)
-                .europayCheckoutReturnHandler()
+                .euroPayCheckoutReturnHandler()
         }
     }
 }
